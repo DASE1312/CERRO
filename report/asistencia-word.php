@@ -8,7 +8,7 @@ include "../core/app/model/AssistanceData.php";
 require_once '../PhpWord/Autoloader.php';
 use PhpOffice\PhpWord\Autoloader;
 use PhpOffice\PhpWord\Settings;
-12356
+
 Autoloader::register();
 
 $word = new  PhpOffice\PhpWord\PhpWord();
@@ -30,7 +30,7 @@ $table1->addCell()->addText("Nombre Completo");
 for($i=0;$i<$range;$i++){ 
 $table1->addCell()->addText(date("d-M",strtotime($_GET["start_at"])+($i*(24*60*60))));
 }
-
+23423
 foreach($alumns as $al){
 $alumn = $al->getAlumn();
 $table1->addRow();
